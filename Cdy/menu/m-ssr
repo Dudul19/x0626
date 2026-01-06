@@ -1,0 +1,83 @@
+#!/bin/bash
+
+BlueCyan='\e[5;36m'
+Xark='\e[0m'
+ungu='\033[0;35m'
+yellow='\e[33m'
+WhiteBe='\e[5;37m'
+GreenBe='\e[5;32m'
+BlueCyan='\e[5;36m'
+Xark='\e[0m'
+clear
+
+function baris_panjang() {
+  echo -e "${BlueCyan} ——————————————————————————— ${Xark} "
+}
+
+
+# . 1
+function Create_Account() {
+  add-ssr
+}
+
+# . 2
+function Create_Trial() {
+  trial-ssr
+}
+
+# . 3
+function List_Member() {
+  member-ssr
+}
+
+# . 4
+function Delete_Account() {
+  delet-ssr
+}
+
+# . 5
+function Changes_Limit() {
+  change-limit-xray
+}
+
+# . 6
+function Renew_Account() {
+  renew-ssr
+}
+
+function Monitor_Ssr(){
+ cek-ssr
+}
+
+function Banner() {
+  baris_panjang
+  echo -e "${ungu}        MENU SSR      ${Xark} "
+  baris_panjang
+}
+
+function Menu_Features() {
+  baris_panjang
+  echo -e "${ungu}"
+  echo " 1.) CREATE SHADOWSOCK "
+  echo " 2.) TRIAL SHADOWSOCK "
+  echo " 3.) DELETE SHADOWSOCK "
+  echo " 4.) LIST MEMBER "
+  echo " 5.) RENEW ACCOUNT "
+  echo " 6.) MONITOR SSR "
+  echo -e "${Xark}"
+  echo -e "${yellow} x.) BACK ${Xark}"
+  baris_panjang
+}
+
+Banner
+Menu_Features
+read -p "Select [1/6 or x] :  " Ltt
+case $Ltt in
+1) clear ; Create_Account ;;
+2) clear ; Create_Trial ;;
+3) clear ; Delete_Account ;;
+4) clear ; List_Member ;;
+5) clear ; Renew_Account ;;
+6) clear ; Monitor_Ssr ;;
+*) menu ;;
+esac

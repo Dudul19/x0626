@@ -23,7 +23,7 @@ apt install python3 python3-pip git -y
 
 # Unduh dan siapkan bot
 cd /usr/bin
-wget https://raw.githubusercontent.com/ryankputra/xnew/main/Bot/bot.zip
+wget https://raw.githubusercontent.com/dudul19/x0626/main/Bot/bot.zip
 unzip bot.zip
 mv bot/* /usr/bin
 chmod +x /usr/bin/*
@@ -32,14 +32,14 @@ rm -rf bot.zip
 # Unduh dan siapkan kyt
 clear
 cd
-wget https://raw.githubusercontent.com/ryankputra/xnew/main/Bot/kyt.zip
+wget https://raw.githubusercontent.com/dudul19/x0626/main/Bot/kyt.zip
 unzip kyt.zip
 cp -r kyt /usr/bin/
 cd /usr/bin
 pip3 install -r kyt/requirements.txt
 
 # Unduh dan siapkan skrip 2fa.py
-wget https://raw.githubusercontent.com/ryankputra/xnew/main/Bot/2fa.py -O /usr/bin/2fa.py
+wget https://raw.githubusercontent.com/dudul19/x0626/main/Bot/2fa.py -O /usr/bin/2fa.py
 chmod +x /usr/bin/2fa.py
 
 # Minta pengguna untuk memasukkan Token Bot dan ID Admin

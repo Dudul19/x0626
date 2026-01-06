@@ -36,8 +36,8 @@ fun_bar() {
     tput cnorm
 }
 res1() {
-    wget https://raw.githubusercontent.com/ryankputra/xnew/main/Cdy/menu.zip
-    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/ryankputra/xnew/main/Enc/encrypt" ; chmod +x /usr/bin/enc
+    wget https://raw.githubusercontent.com/dudul19/x0626/main/Cdy/menu.zip
+    wget -q -O /usr/bin/enc "https://raw.githubusercontent.com/dudul19/x0626/main/Enc/encrypt" ; chmod +x /usr/bin/enc
     7z x -pEasyStore@86 menu.zip
     chmod +x menu/*
     mv menu/* /usr/local/sbin
@@ -51,7 +51,7 @@ res1() {
 netfilter-persistent
 clear
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e " \e[1;97;101m          UPDATE SCRIPT RYYSTORE V2      \e[0m"
+echo -e " \e[1;97;101m          UPDATE SCRIPT MR DUDUL         \e[0m"
 echo -e "\033[1;36m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 echo -e ""
 echo -e "  \033[1;91m update layanan script \033[1;37m"

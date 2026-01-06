@@ -1,0 +1,143 @@
+#!/bin/bash
+
+BlueCyan='\e[5;36m'
+Xark='\e[0m'
+ungu='\033[35m'
+yellow='\e[33m'
+WhiteBe='\e[5;37m'
+GreenBe='\e[5;32m'
+BlueCyan='\e[5;36m'
+White="\033[97;1m"
+Green="\033[92;1m"
+Cyan="\033[96;1m"
+Xark='\e[0m'
+BG_BLU="\033[44;1m" # BG BIRU
+clear
+
+function baris_panjang() {
+  echo -e "${BlueCyan} ———————————————————————————————————————${Xark}"
+}
+function ATAS() {
+  echo -e     "${ungu}                FEATURES               ${Xark} "
+}
+
+function  FIXX() {
+  echo -e  " ${BG_BLU}               MENU FIXX              ${Xark}"
+}
+
+
+function  CLEAR() {
+  echo -e  " ${BG_BLU}               MENU CLEAR             ${Xark}"
+}
+
+
+function  INFORMATION() {
+  echo -e  " ${BG_BLU}              INFORMATION             ${Xark}"
+}
+
+
+function  OTHER() {
+  echo -e  " ${BG_BLU}                OTHER                 ${Xark}"
+}
+
+
+function Create_Bot_Notif() {
+  create-bot-notif
+}
+
+
+function Info_Port() {
+  prot
+}
+
+
+function Registrasi_Ip_Vps() {
+echo -e "${Cyan} ANDA HARUS MENGHUBUNGI ADMIN-${Xark} "
+echo -e "${Cyan}      TERLEBIH DAHULU ${Xark} "
+echo -e "
+echo -e "${Cyan} Untuk Membeli source / Menyewa ${Xark} "
+echo ""
+echo -e ${White} Telegram: t.me/dudulrealnofek ${Xark} "
+}
+
+# Banner 
+function Banner(){
+clear
+baris_panjang
+ATAS
+baris_panjang
+}
+
+
+function Menu_Lambofgod() {
+baris_panjang
+echo -e ""
+echo -e "  1.) Running Service    "  
+echo -e "  2.) Restart Service    " 
+echo -e "  3.) Auto Reboot " 
+echo -e "  4.) Monitoring         " 
+echo -e "  5.) SpeedTest "
+echo -e "  6.) Delete All Account Exp "
+echo -e "  7.) Reboot "
+baris_panjang
+FIXX
+baris_panjang
+echo -e "  8.) Change Banner      "  
+echo -e "  9.) Change Domain      "  
+echo -e "  10.) Fixx Haproxy       "  
+echo -e " 11.) Fixx Domain        "  
+echo -e " 12.) Auto Pointting     "  
+echo -e " 13.) Install Udp        "  
+echo -e " 14.) Backup Bot Telegram   "
+baris_panjang
+CLEAR
+baris_panjang
+echo -e " 15.) Clear Cache "
+echo -e " 16.) Clear Logs "
+echo -e " 17.) Clear Cache File "
+baris_panjang
+INFORMATION
+baris_panjang
+echo -e " 18.) Info Service Port  "
+echo -e " 19.) Information System "
+baris_panjang
+echo -e " 20.) Back to Menu"
+echo -e "  x . EXIT "
+echo -e ""
+baris_panjang
+echo -e ""
+
+}
+
+function Select_Menu() {
+read -p "Select From Options [1-19 or x] :  " Ltt
+case $Ltt in
+1) clear ; run ;;
+2) clear ; reset ;;
+3) clear ; autoreboot ;;
+4) clear ; gotop ;;
+5) clear ; speedtest ;;
+6) clear ; xp ;;
+7) clear ; reboot ;;
+8) clear ; nano /etc/banner.txt ;;
+9) clear ; change-domain ;;
+10) clear ; fixhap ;;
+11) clear ; fixcert ;;
+12) clear ; cf ;;
+13) clear ; UDEPE ;;
+14) clear ; mbot ;;
+15) clear ; clearcache ;;
+16) clear ; clearlog ;;
+17) clear ; delet-cache-file ;;
+18) clear ; Info_Port ;;
+19) clear ; neo ;;
+20) clear ; menu ;;
+x) exit ;;
+*) m-ftr ;;
+esac
+}
+
+
+Banner
+Menu_Lambofgod
+Select_Menu
